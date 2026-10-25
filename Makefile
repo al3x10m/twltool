@@ -1,6 +1,6 @@
 OBJS = dsi.o main.o f_xy.o utils.o
 POLAR_OBJS = polarssl/aes.o polarssl/bignum.o polarssl/rsa.o polarssl/sha2.o sha1.o
-CFLAGS = -Wall -Wno-unused-variable -Wno-unused-but-set-variable -I. -O0
+CFLAGS = -Wall -Wno-unused-variable -Wno-unused-but-set-variable -I. -Os
 OUTPUT = twltool
 
 main: $(OBJS) $(POLAR_OBJS) $(TINYXML_OBJS)
